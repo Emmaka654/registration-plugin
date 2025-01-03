@@ -7,8 +7,7 @@ jQuery(document).ready(function ($) {
 });
 
 jQuery(document).ready(function ($) {
-    $('#authorization-form').on('submit', function (e) {
-        e.preventDefault();
+    $('#authorization-form').on('submit', function () {
         const messageBlock = $('#authorization-response-message');
         const formData = $(this).serialize();
 

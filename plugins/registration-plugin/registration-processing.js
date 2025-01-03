@@ -1,6 +1,5 @@
 jQuery(document).ready(function ($) {
     $('#button-registration').on('click', function (e) {
-        e.preventDefault();
         const registrationForm = document.querySelector('#registration-container');
 
         // Показать или скрыть всплывающее окно при нажатии на кнопку регистрации

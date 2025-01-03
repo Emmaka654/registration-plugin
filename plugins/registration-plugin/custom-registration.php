@@ -20,27 +20,27 @@ function registration_form($username, $password, $email, $fname)
 //    <label> — это HTML-элемент, который используется для создания метки для элемента формы
     echo ' 
 <form id="registration-form" action="' . $_SERVER['REQUEST_URI'] . '" method="post"> 
-<div> 
-<label for="username">Имя пользователя <strong>*</strong></label> 
-<input type="text" name="username" value="' . (isset($_POST['username']) ? $username : null) . '"> 
-</div> 
+    <div> 
+        <label for="username">Имя пользователя <strong>*</strong></label> 
+        <input type="text" name="username" value="' . (isset($_POST['username']) ? $username : null) . '"> 
+    </div> 
 
-<div> 
-<label for="password">Пароль <strong>*</strong></label> 
-<input type="password" name="password" value="' . (isset($_POST['password']) ? $password : null) . '"> 
-</div> 
+    <div> 
+        <label for="password">Пароль <strong>*</strong></label> 
+        <input type="password" name="password" value="' . (isset($_POST['password']) ? $password : null) . '"> 
+    </div> 
 
-<div> 
-<label for="email">Email <strong>*</strong></label> 
-<input type="text" name="email" value="' . (isset($_POST['email']) ? $email : null) . '"> 
-</div> 
+    <div> 
+        <label for="email">Email <strong>*</strong></label> 
+        <input type="text" name="email" value="' . (isset($_POST['email']) ? $email : null) . '"> 
+    </div> 
 
-<div> 
-<label for="firstname">ФИО</label> 
-<input type="text" name="fname" value="' . (isset($_POST['fname']) ? $fname : null) . '"> 
-</div> 
+    <div> 
+        <label for="firstname">ФИО</label> 
+        <input type="text" name="fname" value="' . (isset($_POST['fname']) ? $fname : null) . '"> 
+    </div> 
 
-<input id ="submit-registration" type="submit" name="submit" value="Зарегистрироваться"/> 
+    <input id ="submit-registration" type="submit" name="submit" value="Зарегистрироваться"/> 
 </form> 
 <div id="response-message"></div> <!-- Блок для вывода сообщений -->
 ';
